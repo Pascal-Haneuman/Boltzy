@@ -1,0 +1,26 @@
+#Junk data that we initially tried to use for our experiment, it did't work so we used the new data set that you see above. We leave this here in case you wish to use it to eventually analyze our methods.
+
+#Voltage data
+#v_source = np.array([4.99,
+#5.01,
+#5.02,
+#5.03,
+#5.04,
+#5.05,
+#5.06,
+#5.07,
+#5.08,
+#5.08,
+#]) #Volt
+
+#v_res = np.array([0.72844,
+#0.7329,
+#0.73531,
+#0.73767,
+#0.74004,
+#0.74231,
+#0.74464,
+#0.74694,
+#0.74918,
+#0.7514,
+#]) #Volt
