@@ -1,9 +1,15 @@
-#Modules
+#region ###########################  Modules #####################  
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
-test
-#Resistor data
+#endregion ###########################  Modules #####################  
+
+#region ###########################  Constants #####################  
+q = -1.602e-19 #C - The charge of an elektron
+n = 2.0 #+-0.1 - The idealisation factor, not quite sure what this is as i can't find any outside references for it
+#endregion ###########################  Constants #####################  
+
+#region ###########################  Data #####################  
 r_1 = 10000 #ohm
 r_2 = 1000 #ohm
 r_3 =330 #ohm
@@ -15,8 +21,14 @@ plt.plot
 #Diode data
 vol_dio = v_after-v_res
 cur_dio = v_res / r_1
+#endregion ###########################  Data #####################  
 
-#Plotting
+#region ###########################  Model #####################  
+def model(Voltage,c1,c2,c3):
+    return c1*(np.exp(-(q*c2)/(n*c3*T))-1)
+#endregion ###########################  Model #####################  
+
+#region ###########################  Plotting #####################  
 plt.figure()
 plt.grid()
 plt.yscale("log")
@@ -24,3 +36,4 @@ plt.scatter(vol_dio,cur_dio)
 plt.ylabel("Log current from the diode $(A)$")
 plt.xlabel("Voltage on the diode $(V)$")
 plt.show()
+#endregion ###########################  Plotting #####################  
