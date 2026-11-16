@@ -2,7 +2,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
-
+test
 #Resistor data
 r_1 = 10000 #ohm
 r_2 = 1000 #ohm
