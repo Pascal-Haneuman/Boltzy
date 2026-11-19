@@ -2,17 +2,17 @@
 ## General
 
 **Name: Sam Mena Mena, Nathan Dirks**  
-**Title of the experiment: **    
-**Starting date:**  
-**Expected enddate:**  
-**Partner:**  
-**Goal of the experiment:**  
-**Research question:**  
-**Expectations or Hypothesis:**  
+**Title of the experiment: **    Temperature through circuits, what constants relate the two?
+**Starting date:**  9/11/2026
+**Expected enddate:**  23/11/2026
+**Partner:**  Nathan Dirks
+**Goal of the experiment:** Determine the Boltzmann constant.  
+**Research question:**  Are temperature//heat and current related to each other by the Boltzmann constant?.
+**Expectations or Hypothesis:**  The Boltzmann constant can be calculated through plotting the current and the voltage drop resulting from a resistance. 
 **Desired accuracy:**  
 
 
-
+test
 ```{code-cell} ipython3
 #import necessary libraries
 import matplotlib.pyplot as plt
@@ -29,16 +29,21 @@ from scipy.optimize import curve_fit
 
 +++
 
-**Method:**  
-**Theory:**  
-**Independent variable:**  
-**Dependent variable:**  
-**Controlled variablen:**  
-**Measurement instruments \& Settings:**  
-**Procedure:**  
+**Method:**  Plotting the current against the voltage drop 
+**Theory:**  Since the temperature and 
+**Independent variable:**  Source voltage
+**Dependent variable:**  Voltage drop 
+**Controlled variables:**  Resistance
+**Measurement instruments \& Settings:** 3 1/2 Amprobe 33XR-A and 5 1/2 multimeters, motherboard, cables. //@Nathan do settings multimeter
+**Procedure:**  We started off by measuring the voltage drop across a resistor of //10 ohms in a range from 0.05 to 6 volts in the source. We started measuring by intervals of 0.05 volts, but because of a lack of time to do the measurements, we then increased the steps to 0.25 and 0.5 towards our last 12 measurements. In total, we took 19 points of data. 
+
+Secondly, we derived the formula needed to calculate the Boltzmann constant from //*given equation. better to put it in verslag than here. it will b shit to write * and used python //do we wanna curve fit the graph for the unknown constants yers or no?? so i can write that down. to calculate the best fit for the unknown constants in the formula. Using this formula, we plotted the resulting current from our measured voltages against the drop in voltage.
+
+//use as theory/,ethod/question one fo those/ The derivative from this plot gives us an estimate of the Boltzmann constant. ///r we doing this???/ We used a curve fit function from the python scipy package to give a numerical answer for the derivative.
 **Setup(drawing or picture):**  
 **Notes:**  
-**About accuracy:**  
+**About accuracy:**  Error in the instruments and irregular step size in our measurements could account for a discrepancy in the measured voltage and resulting plot thereof. To minimize this error, we //did smth in the plot  ///define discrepancies. broader range/results/voltage drop/current when plotting.
+
 
 +++
 
