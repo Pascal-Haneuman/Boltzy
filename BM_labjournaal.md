@@ -11,7 +11,7 @@
 **Expectations or Hypothesis:**  The Boltzmann constant can be calculated through plotting the current and the voltage drop resulting from a resistance. 
 **Desired accuracy:**  
 
-
+I cook WORSE than a british person
 
 ```{code-cell} ipython3
 #import necessary libraries
