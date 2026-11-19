@@ -4,9 +4,8 @@
 **Name: Sam Mena Mena, Nathan Dirks**  
 **Title of the experiment: Determining the Boltzmann constant from the current passing through a diode.**    
 **Starting date:**  
-**Expected enddate:**  
-**Partner:**  
-**Goal of the experiment:**  
+**Expected enddate:**    
+**Goal of the experiment: To use voltage to determine the Boltzmann constant.**  
 **Research question:**  
 **Expectations or Hypothesis:**  
 **Desired accuracy:**  
