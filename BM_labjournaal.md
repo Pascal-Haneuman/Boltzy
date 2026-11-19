@@ -2,7 +2,7 @@
 ## General
 
 **Name: Sam Mena Mena, Nathan Dirks**  
-**Title of the experiment: **    
+**Title of the experiment: Determining the Boltzmann constant from the current passing through a diode.**    
 **Starting date:**  
 **Expected enddate:**  
 **Partner:**  
