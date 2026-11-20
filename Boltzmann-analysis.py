@@ -26,7 +26,7 @@ cur_dio = v_res / r_1
 #region ###########################  Model #####################  
 def model(Voltage,c1,c2):
     return np.log(c1) + Voltage*((-q)/n*c2*T)
-popt,pcov = curve_fit(model,vol_dio,cur_dio)
+popt,pcov = curve_fit(model,vol_dio,cur_dio, p0=(2,4))
 print(popt)
 #endregion ###########################  Model #####################  
 
