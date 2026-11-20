@@ -10,7 +10,6 @@
 **Expectations or Hypothesis:**  
 **Desired accuracy:**  
 
-I cook WORSE than a british person
 
 ```{code-cell} ipython3
 #import necessary libraries

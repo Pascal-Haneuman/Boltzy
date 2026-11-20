@@ -24,9 +24,10 @@ cur_dio = v_res / r_1
 #endregion ###########################  Data #####################  
 
 #region ###########################  Model #####################  
-def model(Voltage,c1,c2):
-    return np.log(c1) + Voltage*((-q)/n*c2*T)
-popt,pcov = curve_fit(model,vol_dio,cur_dio, p0=(2,4))
+def model(Voltage,c1,c2,c3):
+     return c1*(np.exp(q*Voltage/c2/n/T)-1)+c3
+    #return c1*(np.exp(Voltage*c2*(q))-1)
+popt,pcov = curve_fit(model,vol_dio,cur_dio,p0=(0.-3,1.380649e-23,-1e-19))
 print(popt)
 #endregion ###########################  Model #####################  
 
@@ -35,8 +36,8 @@ plt.figure()
 plt.grid()
 plt.yscale("log")
 plt.scatter(vol_dio,cur_dio)
-plt.plot(vol_dio, model(vol_dio, popt[0], popt[1]))
-plt.ylabel("Log current from the diode $(A)$")
+plt.plot(vol_dio, model(vol_dio, popt[0], popt[1],popt[1]))
+plt.ylabel("Ln of the current from the diode $(A)$")
 plt.xlabel("Voltage on the diode $(V)$")
 plt.show()
 #endregion ###########################  Plotting ##################### 
